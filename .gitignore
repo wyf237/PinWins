@@ -1,0 +1,16 @@
+# 构建产物
+bin/
+obj/
+publish/
+dist/
+
+# 用户级工具配置
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# 其他
+Thumbs.db
+.DS_Store

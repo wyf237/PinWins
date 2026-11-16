@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="PinWins.Views.PinnedWindowsWindow"
+        Title="已置顶窗口"
+        Width="840" Height="560"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True">
+  <DockPanel Margin="20">
+
+    <StackPanel DockPanel.Dock="Top" Spacing="4" Margin="0,0,0,14">
+      <TextBlock Text="已置顶窗口" FontSize="20" FontWeight="SemiBold" />
+      <TextBlock Text="点击缩略图把对应窗口切到最前；点击右上角 × 取消该窗口置顶。缩略图会自动刷新。"
+                 Foreground="#8A8A8A" TextWrapping="Wrap" />
+    </StackPanel>
+
+    <TextBlock Name="EmptyText"
+               Text="当前没有已置顶的窗口。"
+               Foreground="#8A8A8A"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               IsVisible="False" />
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+      <WrapPanel Name="CardsPanel" Orientation="Horizontal" />
+    </ScrollViewer>
+
+  </DockPanel>
+</Window>
