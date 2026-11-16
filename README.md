@@ -2,7 +2,7 @@
 
 把 Windows 桌面上的任意窗口"钉"在最前面 —— 一体积小巧、常驻托盘的窗口置顶工具。
 
-[English](README_EN.md)
+[中文](README.md)|[English](README_EN.md)
 
 ---
 
